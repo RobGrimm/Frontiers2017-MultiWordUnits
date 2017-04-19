@@ -5,7 +5,7 @@ Code for obtaining results described in the following [paper](http://journal.fro
 ## OS and Dependencies
 
 This project is written in Python (version 3.4.3) and R (version 3.3.3), both on Ubuntu 14.04. The biggest part of the code is written in Python, and a small part for statistical analysis is written in R. 
-The Python component requires the following dependencies (the version we used is given in parentheses):
+The Python component requires the following packages (the version we used is given in parentheses):
 > numpy (1.12.1)  
 nltk (3.2.2)  
 scipy (0.19.0)  
@@ -35,12 +35,12 @@ And the following British English corpora:
 
 #### Get the British National Corpus
 
-You also need (to purchase) a copy of the [British National Corpus](http://www.natcorp.ox.ac.uk/) (BNC), XML version. From the corpus directory, copy the 'Text' folder to: Frontiers_MultiWordUnits/BNC/corpus/   
+You also need (to purchase) a copy of the [British National Corpus](http://www.natcorp.ox.ac.uk/) (BNC), XML version. From the corpus directory, copy the *Text* folder to: Frontiers_MultiWordUnits/BNC/corpus/   
 
 
 ## Run the experiments 
 
-The project's root directory contains Python and R scripts, numbered 1 through 9, that you need to run one after the other in order to carry out the experiments. 
+The project's root directory contains Python and R scripts, numbered 1 through 9, which you need to run one after the other in order to carry out the experiments. 
 
 *1-pre_process_cds_corpora.py*      
 Pre-process the British English CHILDES corpora.
