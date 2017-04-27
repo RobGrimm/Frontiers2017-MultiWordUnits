@@ -16,13 +16,13 @@ utterances = load_ads()
 # CBL
 cbl = ChunkBasedLearner(random_btp=False)
 mwu_counter = cbl.get_mwus(utterances)
-with open(os.path.join(file_dir, 'ChunkBasedLearner', 'MWUs', 'ADS.pickle'), 'wb') as f:
+with open(os.path.join(file_dir, 'ChunkBasedLearner', 'ADS.pickle'), 'wb') as f:
     pickle.dump(mwu_counter, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 # random baseline
 baseline = ChunkBasedLearner(random_btp=True)
 mwu_counter = baseline.get_mwus(utterances)
-with open(os.path.join(file_dir, 'ChunkBasedLearner', 'MWUs', 'ADS_baseline.pickle'), 'wb') as f:
+with open(os.path.join(file_dir, 'ChunkBasedLearner', 'ADS_baseline.pickle'), 'wb') as f:
     pickle.dump(mwu_counter, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 ########################################################################################################################
@@ -34,11 +34,11 @@ utterances = load_cds()
 # CBL
 cbl = ChunkBasedLearner(random_btp=False)
 mwu_counter = cbl.get_mwus(utterances)
-with open(os.path.join(file_dir, 'ChunkBasedLearner', 'MWUs', 'CDS.pickle'), 'wb') as f:
+with open(os.path.join(file_dir, 'ChunkBasedLearner', 'CDS.pickle'), 'wb') as f:
     pickle.dump(mwu_counter, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 # random baseline
 baseline = ChunkBasedLearner(random_btp=True)
 mwu_counter = baseline.get_mwus(utterances)
-with open(os.path.join(file_dir, 'ChunkBasedLearner', 'MWUs', 'CDS_baseline.pickle'), 'wb') as f:
+with open(os.path.join(file_dir, 'ChunkBasedLearner', 'CDS_baseline.pickle'), 'wb') as f:
     pickle.dump(mwu_counter, f, protocol=pickle.HIGHEST_PROTOCOL)
